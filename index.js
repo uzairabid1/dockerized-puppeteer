@@ -179,6 +179,7 @@ async function getDetails(browser,baseUrl){
 async function main(){
     const browser = await puppeteer.launch({
         headless: 'new',
+        executablePath: '/usr/bin/google-chrome',
         ignoreDefaultArgs: ['--enable-automation'],
         args: [
             '--no-sandbox',
